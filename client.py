@@ -128,9 +128,6 @@ class PoisonedChocolateClient:
 def main():
     host = input("enter host: ")
     port = int(input("enter port: "))
-    if len(sys.argv) != 3:
-        print(f"Usage: {sys.argv[0]} {host} {port}")
-        sys.exit(2)
 
     client = PoisonedChocolateClient(host, port)
 
